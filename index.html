@@ -124,6 +124,55 @@ footer {
   background: var(--dark); color: #94A3B8; text-align: center;
   padding: 1.5rem; font-size: 0.85rem; margin-top: auto;
 }
+  footer {
+  background: var(--dark);
+  color: #94A3B8;
+  padding: 2.5rem 2rem 1.5rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.footer-section h3 {
+  color: var(--white);
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+.footer-section p {
+  color: #94A3B8;
+  line-height: 1.6;
+  font-size: 0.85rem;
+}
+.footer-section ul {
+  list-style: none;
+}
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-section ul li a {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.footer-section ul li a:hover {
+  color: var(--blue);
+}
+.footer-bottom {
+  max-width: 1300px;
+  margin: 1rem auto 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748B;
+}
 footer a { color: var(--blue); text-decoration: none; }
 @media (max-width: 768px) {
   .tool-container { flex-direction: column; }
@@ -177,7 +226,32 @@ footer a { color: var(--blue); text-decoration: none; }
   </div>
 </main>
 <footer>
-  <p>&copy; 2026 TextDelta. All rights reserved. | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>TextDelta</h3>
+      <p>Free online text comparison tool. Compare texts, find differences instantly, and track changes with ease.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Articles</h3>
+      <ul>
+        <li><a href="/what-is-text-diff.html">What Is Text Diff?</a></li>
+        <li><a href="/how-to-compare-two-texts.html">How to Compare Two Texts</a></li>
+        <li><a href="/best-text-diff-tools-2026.html">Best Text Diff Tools 2026</a></li>
+        <li><a href="/text-diff-for-developers.html">Text Diff for Developers</a></li>
+        <li><a href="/text-diff-for-writers.html">Text Diff for Writers</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 TextDelta. All rights reserved.</p>
+  </div>
 </footer>
 <script>
 const translations = {
